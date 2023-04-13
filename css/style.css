@@ -10,6 +10,7 @@
   --primaria: #B100D2;
   --secundaria: #16009D;
   --terciaria: #7A008D;
+  --degrade-botao: linear-gradient(180deg, var(--secundaria) 0%, var(--terciaria) 100%);
 }
 
 body {
@@ -19,11 +20,18 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
   padding: 20px;
-  min-width: 300px;
+}
+li{
+  list-style-type: none;
+}
+a{
+  color: var(--branco);
+  text-decoration: none;
 }
 
 .main{
   margin-top: 10%;
+  min-width: 400px;
 }
 
 .login {
@@ -48,13 +56,6 @@ body {
   margin-bottom: 40px;
 }
 
-#topo {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;  /* alinhamento que vai um de cada lado */
-  align-items: center;            /* centralizar verticalmente o texto */
-}
-
 .botoes {
   display: flex;
   justify-content: space-around;
@@ -62,7 +63,7 @@ body {
 }
 
 .action-button button {
-  background: linear-gradient(180deg, var(--secundaria) 0%, var(--terciaria) 100%);
+  background: var(--degrade-botao);
   /* borda-botão */
 
   border: 1px solid var(--primaria);
@@ -102,6 +103,17 @@ body {
   height: 40px;
   color: var(--cinza);
   margin-right: 10px;
+}
+@media (max-width:500px) {
+  .botao {
+    font-size: 15px;
+    padding: 5px 20px;
+  }
+  .botao > img {
+    height: 20px;
+  }
+  
+
 }
 
 .botao:hover {
@@ -198,6 +210,32 @@ main {
   border-radius: 8px;
 }
 
+.camiseta{
+  position: relative;
+  width: 100%;
+  text-align: right;
+}
+.blur-roxo{
+  z-index: -1;
+  position: absolute;
+  width: 417px;
+  height: 382px;
+  right: -100px;
+  top: -100px;
+  background: rgba(116, 0, 142, 0.8);
+  filter: blur(92px);
+}
+.blur-azul{
+  z-index: -1;
+  position: absolute;
+  width: 417px;
+  height: 382px;
+  right: 100px;
+  top: 50px;
+  background: rgba(29, 0, 155, 0.8);
+  filter: blur(104.5px);
+}
+
 hr {
   background: linear-gradient(to right, rgba(201, 0, 255, 0) 0.52%, #C900FF 47.92%, rgba(255, 0, 255, 0));
   height: 2px;
@@ -246,4 +284,16 @@ footer{
   justify-content: center;
   align-items: center;
   color: var(--cinza);
+}
+
+.video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
 }

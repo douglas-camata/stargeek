@@ -1,0 +1,20 @@
+#topo {
+    display: flex;
+    justify-content: space-between;  /* alinhamento que vai um de cada lado */
+    align-items: center;            /* centralizar verticalmente o texto */
+    margin-bottom: 20px;
+  }
+
+  .menu{
+    display: flex;
+  }
+  .menu > li {
+    padding: 10px; 
+  }
+  .menu > li:hover {
+    background: var(--degrade-botao);
+    border-radius: 5px;
+  }
+  .menu > li > a {
+    font-size: 20px;
+  }

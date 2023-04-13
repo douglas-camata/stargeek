@@ -1,0 +1,70 @@
+.lista-midias {
+    margin: 20px 0;
+}
+
+.topo-lista-midias {
+    display: flex;
+    position: relative;
+}
+
+.topo-lista-midias>h2 {
+    color: var(--cinza);
+    margin-left: 20px;
+}
+
+.blur-roxo-midias {
+    z-index: -1;
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    left: 100px;
+    top: 0px;
+    background: rgba(116, 0, 142, 0.8);
+    filter: blur(20px);
+}
+
+.blur-azul-midias {
+    z-index: -1;
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    left: 0px;
+    top: -10px;
+    background: rgba(29, 0, 155, 0.8);
+    filter: blur(20px);
+}
+
+.midias {
+    display: flex;
+    overflow: scroll;
+    margin-top: 20px;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.midias::-webkit-scrollbar {
+    display: none;
+}
+
+.midia {
+    width: 13%;
+    min-width: 150px;
+    border-radius: 10px;
+    border: 1px solid var(--primaria);
+    box-shadow: 2px 2px 5px var(--cinza);
+    transition: 500ms;
+}
+.midia:hover{
+    transform: scale(1.15);
+
+}
+
+.avatar:hover {
+    content: url(../img/avatar.gif);
+}
+.sonic:hover {
+    content: url(../img/sonic.gif);
+}
+.encanto:hover {
+    content: url(../img/encanto.gif);
+}

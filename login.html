@@ -30,12 +30,27 @@
 
             <div class="botoes">
 
-                <a href="#" class="botao"><img src="img/entrar.svg" alt=""> Entrar</a>
+                <a href="#" class="botao" onclick="teste();"><img src="img/entrar.svg" alt=""> Entrar</a>
                 <a href="cadusuario.html" class="botao"> <img src="img/add.svg" alt=""> Cadastrar</a>
-                
+
             </div>
         </div>
     </div>
+
+    <div class="video">
+        <img src="img/logo.png" alt="">
+    </div>
+
+    <script>
+        function teste() {
+            
+            var r = document.querySelector('.video');
+	        r.style.setProperty('display', 'flex');
+
+        }
+
+    </script>
+
 </body>
 
 </html>
