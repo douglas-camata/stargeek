@@ -9,33 +9,34 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-    <header id="topo">
+    <header id="topo" class="topo-catalogo">
         <a href="index.html"> <img src="../img/logo.png" alt=""></a>
 
         <div>
             <nav>
                 <ul class="menu">
-                    <li><a href="#"> Filmes </a></li>
-                    <li><a href="#"> Séries </a></li>
-                    <li><a href="#"> Games </a></li>
-                    <li><a href="#"> Livros </a></li>
+                    <li><a href="#filmes"> Filmes </a></li>
+                    <li><a href="#series"> Séries </a></li>
+                    <li><a href="#games"> Games </a></li>
+                    <li><a href="#livros"> Livros </a></li>
                 </ul>
             </nav>
         </div>
 
         <div class="botoes">
-            <a href="login.html" class="botao"><img src="img/add.svg" alt=""> Nova Mídia</a>
-            <a href="cadusuario.html" class="botao"> <img src="img/entrar.svg" alt=""> Sair</a>
+            <a href="cadastro-midia.html" class="botao"><img src="img/add.svg" alt=""> Nova Mídia</a>
+            <a href="index.html" class="botao"> <img src="img/entrar.svg" alt=""> Sair</a>
         </div>
     </header>
 
-    <main>
+    <main class="main-catalogo">
         <hr>
 
-        <section class="lista-midias">
+        <section class="lista-midias" id="filmes">
             <div class="topo-lista-midias">
                 <img src="img/icon-filme.png" alt="">
                 <h2>Meus Filmes</h2>
@@ -43,19 +44,19 @@
                 <div class="blur-roxo-midias"></div>
             </div>
             <div class="midias">
-                <img src="img/filme1.png" class="midia avatar">
-                <img src="img/filme2.png" class="midia sonic">
-                <img src="img/filme3.png" class="midia">
-                <img src="img/filme4.png" class="midia encanto">
-                <img src="img/filme5.png" class="midia">
-                <img src="img/filme6.png" class="midia">
-                <img src="img/filme7.png" class="midia">
-                <img src="img/filme8.png" class="midia">
-                <img src="img/filme9.png" class="midia">
+                <a href="#avatar"><img src="img/filme1.png" class="midia avatar"></a>
+                <a href="#sonic"><img src="img/filme2.png" class="midia sonic"></a>
+                <a href="#"><img src="img/filme3.png" class="midia"></a>
+                <a href="#"><img src="img/filme4.png" class="midia encanto"></a>
+                <a href="#"><img src="img/filme5.png" class="midia"></a>
+                <a href="#"><img src="img/filme6.png" class="midia"></a>
+                <a href="#"><img src="img/filme7.png" class="midia"></a>
+                <a href="#"><img src="img/filme8.png" class="midia"></a>
+                <a href="#"><img src="img/filme9.png" class="midia"></a>
             </div>
         </section>
         <hr>
-        <section class="lista-midias">
+        <section class="lista-midias" id="series">
             <div class="topo-lista-midias">
                 <img src="img/icon-series.png" alt="">
                 <h2>Minhas Séries</h2>
@@ -76,7 +77,7 @@
             </div>
         </section>
         <hr>
-        <section class="lista-midias">
+        <section class="lista-midias" id="games">
             <div class="topo-lista-midias">
                 <img src="img/icon-games.png" alt="">
                 <h2>Meus Games</h2>
@@ -97,7 +98,7 @@
             </div>
         </section>
         <hr>
-        <section class="lista-midias">
+        <section class="lista-midias" id="livros">
             <div class="topo-lista-midias">
                 <img src="img/icon-filme.png" alt="">
                 <h2>Meus Livros</h2>
@@ -105,18 +106,40 @@
                 <div class="blur-roxo-midias"></div>
             </div>
             <div class="midias">
-                <img src="img/filme1.png" class="midia">
-                <img src="img/filme2.png" class="midia">
-                <img src="img/filme3.png" class="midia">
-                <img src="img/filme4.png" class="midia">
-                <img src="img/filme5.png" class="midia">
-                <img src="img/filme6.png" class="midia">
-                <img src="img/filme7.png" class="midia">
-                <img src="img/filme8.png" class="midia">
-                <img src="img/filme9.png" class="midia">
-                <img src="img/filme10.png" class="midia">
+                <img src="img/livro1.webp" class="midia">
+                <img src="img/livro2.jpg" class="midia">
+                <img src="img/livro3.jpg" class="midia">
+                <img src="img/livro4.jpg" class="midia">
+                <img src="img/livro5.webp" class="midia">
+                <img src="img/livro6.webp" class="midia">
+                <img src="img/livro7.webp" class="midia">
+                <img src="img/livro8.jpg" class="midia">
+                <img src="img/livro9.jpg" class="midia">
+                <img src="img/livro10.jpg" class="midia">
             </div>
         </section>
+
+        <div id="avatar" class="lightbox">
+            <div>
+                <a href="#" class="close"></a>
+                <div class="div-filme">
+                    <img src="img/avatar-trailer.gif" alt="">
+                    <h1>Avatar 2 - Caminho das Águas</h1>
+                    <p>Após formar uma família, Jake Sully e Ney'tiri fazem de tudo para ficarem juntos. No entanto, eles devem sair de casa e explorar as regiões de Pandora quando uma antiga ameaça ressurge, e Jake deve travar uma guerra difícil contra os humanos.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="sonic" class="lightbox">
+            <div>
+                <a href="#" class="close"></a>
+                <div class="div-filme">
+                    <img src="img/sonic.gif" alt="">
+                    <h1>Sonic 2 - O Filme</h1>
+                    <p>O Dr. Robotnik retorna à procura de uma esmeralda mística que tem o poder de destruir civilizações. Para detê-lo, Sonic se une a seu antigo parceiro, Tails, e parte em uma jornada para encontrar a joia antes que ela caia em mãos erradas.'   </p>
+                </div>
+            </div>
+        </div>
 
     </main>
 
