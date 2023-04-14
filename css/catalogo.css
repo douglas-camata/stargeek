@@ -1,3 +1,12 @@
+.topo-catalogo {
+    position: fixed;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 .lista-midias {
     margin: 20px 0;
 }
@@ -48,13 +57,15 @@
 
 .midia {
     width: 13%;
+    height: 100%;
     min-width: 150px;
     border-radius: 10px;
     border: 1px solid var(--primaria);
     box-shadow: 2px 2px 5px var(--cinza);
     transition: 500ms;
 }
-.midia:hover{
+
+.midia:hover {
     transform: scale(1.15);
 
 }
@@ -62,9 +73,96 @@
 .avatar:hover {
     content: url(../img/avatar.gif);
 }
+
 .sonic:hover {
     content: url(../img/sonic.gif);
 }
+
 .encanto:hover {
     content: url(../img/encanto.gif);
+}
+
+.main-catalogo {
+    margin-top: 100px;
+}
+
+.lightbox {
+    display: none;
+}
+
+/* Opened lightbox */
+.lightbox:target {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Lightbox content */
+.div-filme {
+    z-index: 20;
+    width: 25rem;
+    position: relative;
+    padding: 1.5em;
+    color: var(--cinza);
+    text-align: center;
+}
+.div-filme > h1 {
+    text-shadow: 2px 2px 2px var(--cinza);
+}
+
+.div-filme>img {
+    width: 100%;
+}
+
+/* Close button */
+.lightbox .close {
+    position: relative;
+    display: block;
+}
+
+.lightbox .close::after {
+    right: -1rem;
+    top: -1rem;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    content: "X";
+    font-size: large;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+/* Lightbox overlay */
+.lightbox .close::before {
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    content: "";
+    cursor: default;
+}
+
+@media (max-width:500px){
+    .topo-catalogo {
+        position: static;
+
+    }
+    .main-catalogo {
+        margin-top: 0px;
+    }
 }
