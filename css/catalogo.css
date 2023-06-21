@@ -56,8 +56,8 @@
 }
 
 .midia {
-    width: 13%;
-    height: 100%;
+    width: 130px;
+    height: 220px;
     min-width: 150px;
     border-radius: 10px;
     border: 1px solid var(--primaria);
@@ -155,6 +155,16 @@
     background-color: rgba(0, 0, 0, 0.8);
     content: "";
     cursor: default;
+}
+.div-img-filme {
+    position: relative;
+}
+
+.excluir {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 20px;
 }
 
 @media (max-width:500px){

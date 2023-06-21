@@ -42,7 +42,7 @@ a{
   margin: 0 auto;
   padding: 50px 20px;
   max-width: 500px;
-
+  min-width: 50%;
   background: rgba(56, 0, 68, 0.32);
   /* borda-botão */
   border: 1px solid var(--primaria);
@@ -133,7 +133,7 @@ a{
   width: 100%;
 }
 
-.input {
+.input, .select {
   background: var(--cinza);
   border-radius: 8px;
   width: 100%;
@@ -302,12 +302,10 @@ footer{
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.sel-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 20px;
+.sel-img { 
+  text-align: center;
 }
+
 .sel-img > img {
   max-width: 200px;
 }

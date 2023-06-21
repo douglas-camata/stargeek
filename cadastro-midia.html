@@ -8,6 +8,7 @@
     <title>StarGeek - Cadastro de Mídia</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src="js/catalogo.js"></script>
 </head>
 
 <body>
@@ -23,19 +24,30 @@
             <h1 class="title">Cadastro de Mídia</h1>
 
             <div>
-                <input class="input" type="text" name="" id="" placeholder="Nome do título">
+                <input class="input" type="text" name="" id="titulo" placeholder="Nome do título">
             </div>
             <div>
-                <input class="input" type="text" name="" id="" placeholder="Categoria">
+                <select name="" id="categoria" class="input">
+                    <option value="Filmes">Filmes</option>
+                    <option value="Séries">Séries</option>
+                    <option value="Games">Games</option>
+                    <option value="Livros">Livros</option>
+                </select>
             </div>
             <div class="sel-img">
-                <a href="#" class="botao"> Selecionar imagem</a>
-                <img src="img/filme1.png" alt="">
+                <input class="input" type="text" name="" id="imagem" placeholder="Link da imagem" onkeyup="carregarImg()">
+                <img src="" id="img">
+            </div>
+            <div class="sel-img">
+                <input class="input" type="text" name="" id="gif" placeholder="Link do GIF" onkeyup="carregarGif()">
+                <img src="" id="imggif">
             </div>
             <div class="botoes">
-                <a href="catalogo.html" class="botao"> <img src="img/add.svg" alt=""> Cadastrar</a>                
+                <a href="#" class="botao" onclick="botaoCadastroMidia()"> <img src="img/add.svg" alt=""> Cadastrar</a>                
+                <a href="catalogo.html" class="botao"> <img src="img/entrar.svg" alt=""> Voltar</a>                
             </div>
         </div>
+
     </div>
 </body>
 
